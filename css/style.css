@@ -21,7 +21,7 @@ body {
 
 #page {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   -webkit-transition: 0.5s;
@@ -1046,18 +1046,6 @@ form label {
   box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-#fh5co-testimonial blockquote:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 12px 12px 0 12px;
-  border-color: #fff transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  bottom: -12px;
-  left: 10%;
-}
 #fh5co-testimonial .author {
   margin-bottom: 0;
   margin-left: 10px;
@@ -1172,9 +1160,10 @@ form label {
 }
 
 #fh5co-offcanvas {
+
   position: absolute;
   z-index: 1901;
-  width: 270px;
+  width: 0;
   background: black;
   top: 0;
   right: 0;
@@ -1192,11 +1181,32 @@ form label {
   transition: 0.5s;
 }
 .offcanvas #fh5co-offcanvas {
+  width: 50%;
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
+}
+@media only screen and (max-width: 480px) {
+  .offcanvas #fh5co-offcanvas {
+    width: 100%;
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+}
+
+.offcanvas-disable #fh5co-offcanvas {
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  display: none;
 }
 #fh5co-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
