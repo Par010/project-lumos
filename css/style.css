@@ -833,6 +833,7 @@ form label {
 }
 
 .feature-image {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   width: 128%;
 }
 @media screen and (max-width: 768px) {
@@ -885,6 +886,9 @@ form label {
   width: 100%;
   float: left;
   margin-bottom: 5em;
+}
+.project img {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .project:last-child {
   margin-bottom: 0;
@@ -1038,13 +1042,19 @@ form label {
 #fh5co-testimonial blockquote {
   border-left: none;
   padding: 30px;
+  color: #52565b;
   background: #fff;
-  -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   position: relative;
+}
+@media only screen and (min-width: 992px) {
+  blockquote {
+    height: 400px;
+  }
 }
 #fh5co-testimonial .author {
   margin-bottom: 0;
