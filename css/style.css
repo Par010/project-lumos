@@ -606,7 +606,7 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 0em 0;
   clear: both;
 }
 #fh5co-section .fh5co-heading span {
@@ -621,7 +621,7 @@ form label {
   #fh5co-started,
   #fh5co-footer,
   .fh5co-section {
-    padding: 3em 0;
+    padding: 0em 0;
   }
 }
 
@@ -1181,6 +1181,7 @@ form label {
   text-transform: uppercase;
 }
 #fh5co-footer .copyright .block {
+  padding-top: 10em;
   display: block;
 }
 
